@@ -13,6 +13,7 @@ sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua."""
 print(a)
 
+
 a ="Hello WOrld!"
 print(a[1])
 
@@ -28,3 +29,4 @@ print("expensive" not in txt)
 
 if("expensive" not in txt):
     print("No, 'expensive' is not present.")
+    

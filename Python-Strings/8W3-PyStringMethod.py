@@ -229,3 +229,229 @@ x = txt.isnumeric()
 print(x)
 
 #isprintable - Returns True if all characters in the string are printable
+txt = "Hello! Are you #1?"
+x = txt.isprintable()
+print(x)
+txt = "Hello!\nAre you #1?"
+x = txt.isprintable()
+print(x)
+
+#isspace - Returns True if all characters in the string are whitespaces
+txt = " "
+x = txt.isspace()
+print(x)
+txt = "   s   "
+x = txt.isspace()
+print(x)
+
+#istitle - Returns True if the string follows the rules of a 
+# method returns True if all words in a text start with a upper case letter, 
+# AND the rest of the word are lower case letters, otherwise False.
+txt = "Hello, And Welcome To My World!"
+x = txt.istitle()
+print(x)
+a = "HELLO, AND WELCOME TO MY WORLD"
+b = "Hello"
+c = "22 Names"
+d = "This Is %'!?"
+print(a.istitle())
+print(b.istitle())
+print(c.istitle())
+print(d.istitle())
+
+#isupper - Returns True if all characters in the string are upper case
+txt = "THIS IS NOW"
+print(txt.isupper())
+a = "Hello World!"
+b = "hello 123"
+c = "MY NAME IS PETER"
+print(a.isupper())
+print(b.isupper())
+print(c.isupper())
+
+#join - Joins the elements of an iterable to the end of the string
+myTuple = ("John","Peter","Vicky")
+x = '#'.join(myTuple)
+print(x)
+myDict = {"name": "John", "country": "Norway"}
+mySeparator = "TEST"
+x = mySeparator.join(myDict)
+print(x)
+
+#ljust - Returns a left justified version of the string
+txt = "banana"
+x = txt.ljust(20)
+print(x, "is my favorite fruit")
+x = txt.ljust(20,"*")
+print(x, "is my favorite fruit")
+
+#lower - Converts a string into lower case
+txt = "Hello my FRIENDS"
+x = txt.lower()
+print(x)
+
+#lstrip - Returns a left trim version of the string
+txt = "     banana     "
+x = txt.lstrip()
+print("of all fruits", x, "is my favorite")
+txt = ",,,,,ssaaww.....banana"
+x = txt.lstrip(",.asw")
+print(x)
+
+#maketrans - Returns a translation table to be used in translations
+txt = "Hello Sam!"
+mytable = txt.maketrans("S","P")
+print(mytable)
+print(txt.translate(mytable))
+txt = "Hello Sam!"
+mytable1 = {83:80}
+print(txt.translate(mytable1))
+txt = "Hi Sam!"
+x = "mSa"
+y = "eJo"
+mytable = str.maketrans(x, y)
+print(txt.translate(mytable))
+
+txt = "Good night Sam!"
+x = "mSa"
+y = "eJo"
+z = "odnght"
+mytable = str.maketrans(x, y, z)
+print(mytable)
+print(txt.translate(mytable))
+
+#partition - Returns a tuple where the string is parted into three parts
+txt = "I could eat bananas all day"
+x = txt.partition("bananas")
+print(x)
+txt = "I could eat bananas all day"
+x = txt.partition("apples")
+print(x)
+
+#replace - Returns a string where a specified value is replaced with a specified value
+txt = "I like bananas"
+x = txt.replace("bananas", "apples")
+print(x)
+txt = "one one was a race horse, two two was one too."
+x = txt.replace("one", "three")
+print(x)
+txt = "one one was a race horse, two two was one too."
+x = txt.replace("one", "three", 2)
+print(x)
+
+#rfind - Searches the string for a specified value and returns
+#  the last position of where it was found
+txt = "Mi casa, su casa."
+x = txt.rfind("casa")
+print(x)
+txt = "Hello, welcome to my world."
+x = txt.rfind("e", 5, 10)
+print(x)
+
+#rindex - Searches the string for a specified value 
+# and returns the last position of where it was found
+txt = "Mi casa, su casa."
+x = txt.rindex("casa")
+print(x)
+txt = "Hello, welcome to my world."
+x = txt.rindex("e", 5, 10)
+print(x)
+txt = "Hello, welcome to my world."
+print(txt.rfind("q"))
+#print(txt.rindex("q"))
+
+#rjust - Returns a right justified version of the string
+txt = "banana"
+x = txt.rjust(20)
+print(x, "is my favorite fruit.")
+txt = "banana"
+x = txt.rjust(20, "O")
+print(x)
+
+#rpartition - Returns a tuple where the string is 
+# parted into three parts
+txt = "I could eat bananas all day, bananas are my favorite fruit"
+x = txt.rpartition("bananas")
+print(x)
+txt = "I could eat bananas all day, bananas are my favorite fruit"
+x = txt.rpartition("apples")
+print(x)
+
+#split - 	Splits the string at the specified separator, and returns a list
+txt = "apple, banana, cherry"
+x = txt.rsplit(", ")
+print(x)
+txt = "apple, banana, cherry"
+
+# setting the maxsplit parameter to 1, will return a list with 2 elements!
+x = txt.rsplit(", ", 1)
+print(x)
+
+#rstrip - Returns a right trim version of the string
+txt = "     banana     "
+x = txt.rstrip()
+print("of all fruits", x, "is my favorite")
+txt = "banana,,,,,ssqqqww....."
+x = txt.rstrip(",.qsw")
+print(x)
+
+#split - Splits the string at the specified 
+# separator, and returns a list
+txt = "welcome to the jungle"
+x = txt.split()
+print(x)
+
+txt = "hello, my name is Peter, I am 26 years old"
+x = txt.split(", ")
+print(x)
+txt = "apple#banana#cherry#orange"
+# setting the maxsplit parameter to 1, will return a list with 2 elements!
+x = txt.split("#", 1)
+print(x)
+
+#splitlines - Splits the string at line breaks and returns a list
+txt = "Thank you for the music\nWelcome to the jungle"
+x = txt.splitlines()
+print(x)
+
+#startswith - Returns true if the string starts with the specified value
+txt = "Hello, welcome to my world."
+x = txt.startswith("Hello")
+print(x)
+
+txt = "Hello, welcome to my world."
+x = txt.startswith("wel", 7, 20)
+print(x)
+
+#strip - Returns a trimmed version of the string
+txt = "     banana     "
+x = txt.strip()
+print("of all fruits", x, "is my favorite")
+
+txt = ",,,,,rrttgg.....banana....rrr"
+x = txt.strip(",.grt")
+print(x)
+
+#swaocase - Swaps cases, lower case becomes upper case and vice versa
+txt = "Hello My Name Is PETER"
+x = txt.swapcase()
+print(x)
+
+#title - Converts the first character of each word to upper case
+txt = "Welcome to my world"
+x = txt.title()
+print(x)
+txt = "Welcome to my 2nd world"
+x = txt.title()
+print(x)
+txt = "hello b2b2b2 and 3g3g3g"
+x = txt.title()
+print(x)
+
+#translate - Returns a translated string
+mydict = {83:  80}
+txt = "Hello Sam!"
+print(txt.translate(mydict))
+txt = "Good night Sam!"
+mydict = {109: 101, 83: 74, 97: 111, 111: None, 100: None, 110: None, 103: None, 104: None, 116: None}
+print(txt.translate(mydict))

@@ -161,3 +161,71 @@ print(txt.format(0.25))
 #Or, without any decimals:
 txt = "You scored {:.0%}"
 print(txt.format(0.25))
+
+#index -  method finds the first occurrence of the specified value.
+txt = "Hello, welcome to my world!"
+x = txt.index("welcome")
+print(x)
+x = txt.index("e",5,10)
+print(x)
+
+#isalnum - Returns True if all characters in the string are alphanumeric
+txt = "Company12"
+x = txt.isalnum()
+print(x)
+
+#isalpha - Returns True if all characters in the string are in the alphabet
+txt = "CompanyX"
+x = txt.isalpha()
+print(x)
+
+#isascii - Returns True if all characters in the string are ascii characters
+txt = "Company123"
+x = txt.isascii()
+print(x)
+
+#isdecimal - Returns True if all characters in the string are decimals
+txt  = "1234"
+x = txt.isdecimal()
+print(x)
+a = "\u0030" #unicode for 0
+b = "\u0047" #unicode for G
+print(a.isdecimal())
+print(b.isdecimal())
+
+#isdigit - Returns True if all characters in the string are digits
+txt = "50800"
+x = txt.isdigit()
+print(x)
+
+#isidentifier - Returns True if the string is an identifier
+txt = "Demo"
+x = txt.isidentifier()
+print(x)
+a = "MyFolder"
+b = "Demo002"
+c = "2bring"
+d = "my demo"
+print(a.isidentifier())
+print(b.isidentifier())
+print(c.isidentifier())
+print(d.isidentifier())
+
+#islower - Returns True if all characters in the string are lower case
+txt = "hello world!"
+x = txt.islower()
+print(x)
+a = "Hello world!"
+b = "hello 123"
+c = "mynameisPeter"
+
+print(a.islower())
+print(b.islower())
+print(c.islower())
+
+#isnumeric - 	Returns True if all characters in the string are numeric
+txt = "565543"
+x = txt.isnumeric()
+print(x)
+
+#isprintable - Returns True if all characters in the string are printable

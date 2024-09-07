@@ -10,3 +10,7 @@ print(mylist)
 thislist = ["apple","banana","cherry"]
 mylist = thislist[:]
 print(mylist)
+
+thislist = ["apple","banana","cherry"]
+mylist = thislist[0:2]
+print(mylist)

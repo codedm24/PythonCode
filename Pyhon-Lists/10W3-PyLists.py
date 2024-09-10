@@ -16,3 +16,4 @@ print(type(list1))
 
 thislist = list(("apple","banana","cherry"))
 print(thislist)
+print(type(thislist))

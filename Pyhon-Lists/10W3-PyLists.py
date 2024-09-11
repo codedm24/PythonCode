@@ -1,3 +1,6 @@
+# List - ordered changeable indexed
+# allow duplicate values
+
 mylist = ["apple", "banana", "cherry"]
 print(mylist)
 

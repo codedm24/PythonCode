@@ -1,3 +1,7 @@
+#Tuple - ordered unchangeable indexed
+# allow duplicate values
+# Tuple - cannot add, remove items after tuple has been created
+
 mytuple = ("apple", "banana", "cherry")
 print(mytuple)
 print(len(mytuple))

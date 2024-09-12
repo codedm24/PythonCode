@@ -85,3 +85,8 @@ car = {
 
 car.update({"color":"white"})
 print(car)
+
+print(car.values())
+
+car["year"] = 2018
+print(car)

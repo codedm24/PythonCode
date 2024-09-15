@@ -13,7 +13,7 @@ print(txt)
 txt= "Hello\nWorld!"
 print(txt)
 #carriage return
-txt1 = "abc\r123!"
+txt1 = "abc\n\r123!"
 print(txt1)
 #tab
 txt1 = "Hello\tWorld!"

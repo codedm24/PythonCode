@@ -89,7 +89,7 @@ print(z)
 x = {"a","b","c"}
 y = {"f", "e", "d", "c", "b", "a"}
 z = x.issubset(y)
-print(z)
+print("subest: ",z)
 
 z = x <= y
 print(z)
@@ -101,7 +101,7 @@ print(z)
 y = {"a","b","c"}
 x = {"f", "e", "d", "c", "b", "a"}
 z = x.issuperset(y)
-print(z)
+print("superset: ",z)
 z = x >= y
 print(z)
 
@@ -146,10 +146,10 @@ x = {"apple", "banana", "cherry"}
 y = {"google", "microsoft", "apple"}
 
 x.update(y)
-print(x)
+print("update: ",x)
 
 x |= y
-print(x)
+print("update with symbol: ",x)
 
 x = {"apple", "banana", "cherry"}
 y = {"google", "microsoft", "apple"}

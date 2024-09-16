@@ -22,6 +22,10 @@ class Student(Person):
     def welcome(self):
         print("Welcome",self.fname, self.lname," to the class of ", self.graduationyear)
 
+    def functionWithoutSelf(self):
+        print("Cannot declare Function without self inside a class")    
+
 x = Student("Mike", "Olsen",2019)  
 x.printname()    
 x.welcome()  
+x.functionWithoutSelf()

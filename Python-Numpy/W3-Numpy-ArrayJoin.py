@@ -13,6 +13,12 @@ arr2 = np.array([[5,6],[7,8]])
 arr3 = np.concatenate((arr1,arr2),axis=1)
 print(arr3)
 
+print('join 2-D array')
+arr1 = np.array([[1,2,8],[3,4,10]])
+arr2 = np.array([[5,6,12],[7,8,21]])
+arr3 = np.concatenate((arr1,arr2),axis=1)
+print(arr3)
+
 print('join 3-D array')
 arr1 = np.array([[[1,2],[3,4]],[[9,10],[11,12]]])
 arr2 = np.array([[[5,6],[7,8]],[[13,14],[15,16]]])

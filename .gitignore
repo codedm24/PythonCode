@@ -8375,3 +8375,6 @@
 .venv/share/man/man1/ttx.1
 Python-Numpy-Random/~$ suggests.docx
 Python-Numpy-Random/AI suggests.docx
+Python-Pandas/data.csv
+Python-Pandas/data.json
+Python-Pandas/Movie-Data.csv

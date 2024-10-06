@@ -18,3 +18,7 @@ if(type(np.add) == np.ufunc):
     print("add is ufunc")
 else:
     print("add is not ufunc")
+
+print("np.add")
+x = np.add([1,2,3,4],[5,6,7,8])
+print(x)

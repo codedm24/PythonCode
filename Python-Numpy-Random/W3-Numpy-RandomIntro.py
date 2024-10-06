@@ -25,6 +25,7 @@ print(type(arr))
 print('Generate 2-D array float')
 arr = random.rand(3,5)
 print(arr)
+print(arr.dtype)
 
 print('Random number of choice')
 x = random.choice([3,5,7,9])

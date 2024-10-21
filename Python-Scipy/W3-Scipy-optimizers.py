@@ -11,7 +11,7 @@ myroot = root(eqn,0)
 
 print(myroot.x)
 
-# print(myroot)
+# print(myroot) 
 
 def eqn(x):
     return x**2+x+2

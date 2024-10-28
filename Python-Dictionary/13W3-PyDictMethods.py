@@ -57,6 +57,7 @@ car = {
 car.pop("model")
 print(car)
 
+print("pop item")
 car = {
     "brand":"Ford",
     "model":"Mustang",
@@ -89,4 +90,7 @@ print(car)
 print(car.values())
 
 car["year"] = 2018
+print(car)
+
+car.pop("brand")
 print(car)

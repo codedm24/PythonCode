@@ -2,12 +2,21 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
+import sys
 
 pd.set_option('display.max_rows',None)
 pd.set_option('display.max_columns', None)
 
+#change current directory 
+print(f"Current Directory: {os.getcwd()}")
+os.chdir('Exercises') 
+print(f"Current Directory: {os.getcwd()}")
+#sys.exit()
+
 #Read csv file into a datset
-df = pd.read_csv('F:\\Projects\\Python\\PythonCode\\Exercises\\Divvy_Trips_2019_Q1.csv')
+#df = pd.read_csv('F:\\Projects\\Python\\PythonCode\\Exercises\\Divvy_Trips_2019_Q1.csv')
+df = pd.read_csv('Divvy_Trips_2019_Q1.csv')
 
 #Display the first five rows
 print(df.head().to_markdown(index=False,numalign="left",stralign="left"))
